@@ -1,0 +1,62 @@
+{
+  "name": "los-angeles-skywatchers-society",
+  "version": "0.0.1",
+  "description": "Next.js with Tailwind CSS, twin.macro and styled-components",
+  "author": {
+    "name": "Ivan Guzman",
+    "email": "hello@ivanguzman.dev",
+    "url": "https://www.ivanguzman.dev"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.16",
+    "@types/react": "^17.0.39",
+    "@types/styled-components": "^5.1.22",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-next": "^12.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
+    "postcss": "^8.4.6",
+    "process": "^0.11.10",
+    "react-is": "^17.0.2",
+    "tailwindcss": "^3.0.19",
+    "twin.macro": "^2.8.2",
+    "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "resolutions": {
+    "css-color-names": "^1.0.1"
+  }
+}
